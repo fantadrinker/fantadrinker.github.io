@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+body nav ul li,
+body div,
+body div p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.left-nav-bar {
+    height: 100vh;
+    width: 20vw;
+    position: sticky;
+    top: 0;
+    flex-shrink: 0;
+}
+
+.left-nav-bar ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px;
+}
+
+.left-nav-bar ul li.section-link.active {
+    flex-grow: 3;
+    font-size: 1.5rem;
+}
+
+.left-nav-bar ul li {
+    flex-grow: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.left-nav-bar ul li:hover {
+    font-size: 1.25rem;
+}
+
+#body .main-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.green {
+    background: #276359;
+    color: white;
+}
+
+.light-green {
+    background: #8EBBA7;
+}
+
+.light-blue {
+    background: #B9CDCB;
+}
+
+.cream {
+    background: #F9DDCC;
+}
+
+.pink {
+    background: #FCAC89;
+}

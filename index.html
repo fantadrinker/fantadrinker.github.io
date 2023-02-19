@@ -9,6 +9,7 @@
   	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -32,21 +33,21 @@
 			<li class="breadcrumb-item" >
 				<a 	class="btn" 
 					data-toggle="collapse" 
-					href="#sideProject" 
-					role="button" 
-					aria-expanded="true"
-					aria-controls="sideProject" >
-					Side Projects
-				</a>
-			</li>
-			<li class="breadcrumb-item" >
-				<a 	class="btn" 
-					data-toggle="collapse" 
 					href="#workExp" 
 					role="button" 
 					aria-expanded="true"
 					aria-controls="workExp" >
 					Work Experience
+				</a>
+			</li>
+			<li class="breadcrumb-item" >
+				<a 	class="btn" 
+					data-toggle="collapse" 
+					href="#sideProject" 
+					role="button" 
+					aria-expanded="true"
+					aria-controls="sideProject" >
+					Side Projects
 				</a>
 			</li>
 			<li class="breadcrumb-item" >
@@ -64,17 +65,83 @@
 		<div class="card card-body m-2">
 			<h4>About Me</h4>
 			<div id="aboutMe" class="collapse show">
-				Hi, my name is Yizhi (Fred) Cui, and I was raised in Beijing, China.
-				I am an 4th year undergraduate at the University of Waterloo, pursuing Bachelor of Computer Science degree. 
-			</div>
-			<div class="container-fluid">
-				<div class="row">
-				<a class="btn btn-outline-primary m-2" role="button" href="/resume.pdf" download="">Resume </a>
-				<a class="btn btn-outline-primary m-2" role="button" href="https://www.linkedin.com/in/yizhi-fred-cui-183337149/">LinkedIn</a>
-				<a class="btn btn-outline-primary m-2" role="button" href="https://github.com/fredtsui">GitHub</a>
+				<div>
+					<p>
+						Hi, my name is Yizhi (Fred) Cui, and I was raised in Beijing, China.
+						I have 4 years of professional experience as a full-stack web developer, and I have a Bachelor's degree in Computer Science from University of Waterloo. 		
+					</p>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+					<a class="btn btn-outline-primary m-2" role="button" href="/resume.pdf" download="">Resume </a>
+					<a class="btn btn-outline-primary m-2" role="button" href="https://www.linkedin.com/in/yizhi-fred-cui-183337149/">LinkedIn</a>
+					<a class="btn btn-outline-primary m-2" role="button" href="https://github.com/fantadrinker/">GitHub</a>
+					</div>
 				</div>
 			</div>
-			
+		</div>
+		<div  class="card card-body m-2">
+			<h4>Work Experience</h4> 
+			<div id="workExp" class="collapse show">
+				<div class="list-group-item">
+					<div class="row">
+						<div class="col-6"><h5>Software Engineer I @ Microsoft</h5></div> 
+						<div class="col-6 text-right">Vancouver, BC, Sept 2021 - Feb 2023</div> 
+					</div>
+					- Implemented and AB-tested various visual improvements for ads with image (Multimedia Ads), showed user satisfaction gain <br />
+					- Worked with large scale user data and applied data-driven decision making to effectively resolve production issues and find direction for improvements <br />
+					- Maintained an ASP.NET internal tool that compares features side-by-side. <br />
+				</div>
+				<div class="list-group-item">
+					<div class="row">
+						<div class="col-6"><h5>Software Developer @ BenchSci</h5></div> 
+						<div class="col-6 text-right">Toronto, ON, Aug 2019 - Aug 2021</div> 
+					</div>
+					- Frameworks/Languages: AngularJS, Java, Node Express, MySQL <br />
+					- Migrated the front-end of a blockchain application to Angular JS <br/>
+					- Implemented Java procedures to query and generate customized report from data in database
+				</div>
+				<div class="list-group-item">
+					<div class="row">
+						<div class="col-6"><h5>Software Developer @ TD Securities</h5></div> 
+						<div class="col-6 text-right">May 2018 - Aug 2018</div> 
+					</div>
+					- Frameworks/Languages: AngularJS, Java, Node Express, MySQL <br />
+					- Migrated the front-end of a blockchain application to Angular JS <br/>
+					- Implemented Java procedures to query and generate customized report from data in database
+				</div>
+				<div class="list-group-item">
+					<div class="row">
+						<div class="col-6"><h5>Software Developer @ TD Securities</h5></div> 
+						<div class="col-6 text-right">May 2018 - Aug 2018</div> 
+					</div>
+					- Frameworks/Languages: AngularJS, Java, Node Express, MySQL <br />
+					- Migrated the front-end of a blockchain application to Angular JS <br/>
+					- Implemented Java procedures to query and generate customized report from data in database
+				</div>
+				<div class="list-group-item">
+					<div class="row">
+						<div class="col-6"><h5>Software Developer @ 360 Education Labs</h5></div> 
+						<div class="col-6 text-right">Sept 2017 - Dec 2017</div> 
+					</div>
+					- Frameworks/Languages: WebRTC, React, JavaEE <br />
+					- Designed and implemented a HTML5-based video conference room application using React and 
+					WebRTC from scratch with minimal help <br />
+					- The application have several conferencing utilities such as document sharing, canvas drawing 
+					with curves, shapes, and texts. <br />
+					- By the end of the work, the product is used for team's SCRUM meeting, and is expected to 
+					used in production after recording and replaying being implemented.  
+				</div>
+				<div class="list-group-item">
+					<div class="row">
+						<div class="col-6"><h5>Support Software Developer @ Thirdeye Solutions</h5></div> 
+						<div class="col-6 text-right">May 2016 - Dec 2016</div> 
+					</div>
+					- Frameworks/Languages: JSP, J2EE, HTML5 <br /> 
+					- Implemented an extra login page for two-factor authentication for a Java-web application <br />
+					- Used SQL queries to pull data from database and generate financial reports, statements and notices 
+				</div>
+			</div>
 		</div>
 		<div class="card card-body m-2">
 			<h4>Side Projects and Relavent Courses</h4>
@@ -118,42 +185,6 @@
 				
 			</div>
 			
-		</div>
-		<div  class="card card-body m-2">
-			<h4>Work Experience</h4> 
-			<div id="workExp" class="collapse show">
-				<div class="list-group-item">
-					<div class="row">
-						<div class="col-6"><h5>Software Developer @ TD Securities</h5></div> 
-						<div class="col-6 text-right">May 2018 - Aug 2018</div> 
-					</div>
-					- Frameworks/Languages: AngularJS, Java, Node Express, MySQL <br />
-					- Migrated the front-end of a blockchain application to Angular JS <br/>
-					- Implemented Java procedures to query and generate customized report from data in database
-				</div>
-				<div class="list-group-item">
-					<div class="row">
-						<div class="col-6"><h5>Software Developer @ 360 Education Labs</h5></div> 
-						<div class="col-6 text-right">Sept 2017 - Dec 2017</div> 
-					</div>
-					- Frameworks/Languages: WebRTC, React, JavaEE <br />
-					- Designed and implemented a HTML5-based video conference room application using React and 
-					WebRTC from scratch with minimal help <br />
-					- The application have several conferencing utilities such as document sharing, canvas drawing 
-					with curves, shapes, and texts. <br />
-					- By the end of the work, the product is used for team's SCRUM meeting, and is expected to 
-					used in production after recording and replaying being implemented.  
-				</div>
-				<div class="list-group-item">
-					<div class="row">
-						<div class="col-6"><h5>Support Software Developer @ Thirdeye Solutions</h5></div> 
-						<div class="col-6 text-right">May 2016 - Dec 2016</div> 
-					</div>
-					- Frameworks/Languages: JSP, J2EE, HTML5 <br /> 
-					- Implemented an extra login page for two-factor authentication for a Java-web application <br />
-					- Used SQL queries to pull data from database and generate financial reports, statements and notices 
-				</div>
-			</div>
 		</div>
 		<div class="card card-body m-2">
 			<h4>Hobbies</h4> 
