@@ -15,13 +15,19 @@
   	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
     <script>
+        const skills = [
+            "python",
+            "React",
+            "C#",
+            "SQL"
+        ]
         window.newHomeActiveSection = 0;
         function updateActiveSection(event) {
             // first get the current element visible,
             // for the i'th section,
             // if offsetTop is between [(i - 1/2) * innerHeight, (i + 1/2) * innerHeight]
             // this only works if each section's width is window.innerHeight
-            var currSection = Math.floor(window.scrollY / window.innerHeight + 0.5);
+            var currSection = Math.floor(window.scrollY / (window.innerHeight * 1.1) + 0.5);
             if (currSection != window.newHomeActiveSection){
                 // console.log("active section is ", currSection);
                 // update css styles
@@ -46,7 +52,7 @@
 
         function toggleWorkExp() {
             window.scrollTo({
-                top: window.innerHeight,
+                top: window.innerHeight * 1.1,
                 left: 0,
                 behavior: 'smooth'
             }); 
@@ -54,7 +60,7 @@
 
         function toggleSideProjs() {
             window.scrollTo({
-                top: 2 * window.innerHeight,
+                top: 2.2 * window.innerHeight,
                 left: 0,
                 behavior: 'smooth'
             }); 
@@ -62,7 +68,7 @@
 
         function toggleHobbies() {
             window.scrollTo({
-                top: 3 * window.innerHeight,
+                top: 3.3 * window.innerHeight,
                 left: 0,
                 behavior: 'smooth'
             }); 
@@ -75,7 +81,7 @@
     <nav class="left-nav-bar green">
         <ul>
             <li>
-                <h4>Yizhi (Fred) Cui</h4>
+                <h4>Fred Cui</h4>
             </li>
             <li class="section-link active" onclick="toggleAboutMe()">
                 <a >
@@ -83,10 +89,10 @@
                 </a>
             </li>
             <li class="section-link" onclick="toggleWorkExp()">
-                <a >Work Experience</a>
+                <a>Experiences</a>
             </li>
             <li class="section-link" onclick="toggleSideProjs()">
-                <a >Side Projects</a>
+                <a>Projects</a>
             </li>
             <li class="section-link" onclick="toggleHobbies()">
                 <a>Hobbies</a>
@@ -99,8 +105,8 @@
             <h4>About Me</h4>
             <div id="aboutMe" class="collapse show">
 				Hi, my name is Yizhi (Fred) Cui, and I was raised in Beijing, China.
-				I am an 4th year undergraduate at the University of Waterloo, pursuing Bachelor of Computer Science degree. 
-			</div>
+                I have 4 years of professional experience as a full-stack web developer, and I have a Bachelor's degree in Computer Science from University of Waterloo. 		
+            </div>
             <div class="container-fluid">
 				<div class="row">
                     <a class="btn btn-outline-primary m-2" role="button" href="/resume.pdf" download="">Resume </a>
@@ -112,6 +118,16 @@
 
         <div class="main-section light-blue">
             <h4>Work Experience</h4>
+
+            <div id="skills">
+                <span>Skills Highlight</span>
+                <div id="skills-box">
+                    <div>Python</div>
+                    <div>React</div>
+                    <div>C#</div>
+                    <div>SQL</div>
+                </div>
+            </div>
             <div id="workExp">
                 <div class="list-group-item">
 					<div class="row">

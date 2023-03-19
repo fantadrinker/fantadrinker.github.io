@@ -10,15 +10,17 @@ body div p {
 }
 
 .left-nav-bar {
-    height: 100vh;
-    width: 20vw;
-    position: sticky;
+    height: calc(100vh - 20px);
+    width: 210px;
+    position: fixed;
     top: 0;
     flex-shrink: 0;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .left-nav-bar ul {
-    height: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -26,8 +28,17 @@ body div p {
 }
 
 .left-nav-bar ul li.section-link.active {
-    flex-grow: 3;
+    flex-grow: 2;
     font-size: 1.5rem;
+}
+
+.left-nav-bar ul li.section-link.active a {
+    background: #059b7f;
+    border-radius: 6px;
+}
+
+.left-nav-bar ul li.section-link a {
+    padding: 8px;
 }
 
 .left-nav-bar ul li {
@@ -41,11 +52,11 @@ body div p {
 }
 
 #body .main-section {
-    min-height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 20px 20px 230px;
 }
 
 .green {
@@ -67,4 +78,15 @@ body div p {
 
 .pink {
     background: #FCAC89;
+}
+
+#skills-box {
+    display: flex;
+}
+
+#skills-box > div {
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 4px;
 }

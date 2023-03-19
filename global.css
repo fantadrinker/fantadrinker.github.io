@@ -7,6 +7,30 @@ div {
 	border-radius: 5px;
 }
 
+nav {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	top: 0;
+	height: 62px;
+}
+
+:target::before {
+	content: "";
+	display: block;
+	height: 60px; /* fixed header height*/
+	margin: -60px 0 0; /* negative fixed header height */
+}
+  
+div.container {
+	top: 62px;
+	position: relative;
+}
+
+div.container div{
+	scroll-padding-top: 70px;
+}
+
 div.topBar {
 	width: 100%;
 	padding: 0.2em;

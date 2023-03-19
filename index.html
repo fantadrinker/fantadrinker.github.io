@@ -3,7 +3,7 @@
 <head>
   	<title>Yizhi Cui</title>
 
-  <!--<link rel="stylesheet" href="global.css">-->	
+    <link rel="stylesheet" href="global.css">
 
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -22,7 +22,6 @@
 			</li>
 			<li class="breadcrumb-item" >
 				<a 	class="btn" 
-					data-toggle="collapse" 
 					href="#aboutMe" 
 					role="button" 
 					aria-expanded="true"
@@ -32,7 +31,6 @@
 			</li>
 			<li class="breadcrumb-item" >
 				<a 	class="btn" 
-					data-toggle="collapse" 
 					href="#workExp" 
 					role="button" 
 					aria-expanded="true"
@@ -42,7 +40,6 @@
 			</li>
 			<li class="breadcrumb-item" >
 				<a 	class="btn" 
-					data-toggle="collapse" 
 					href="#sideProject" 
 					role="button" 
 					aria-expanded="true"
@@ -52,7 +49,6 @@
 			</li>
 			<li class="breadcrumb-item" >
 				<a 	class="btn" 
-					data-toggle="collapse" 
 					href="#hobbies" 
 					role="button" 
 					aria-controls="hobbies" >
@@ -62,9 +58,9 @@
 		</ol>
 	</nav>
 	<div class="container">
-		<div class="card card-body m-2">
+		<div class="card card-body m-2" id="aboutMe">
 			<h4>About Me</h4>
-			<div id="aboutMe" class="collapse show">
+			<div  class="collapse show">
 				<div>
 					<p>
 						Hi, my name is Yizhi (Fred) Cui, and I was raised in Beijing, China.
@@ -80,9 +76,13 @@
 				</div>
 			</div>
 		</div>
-		<div  class="card card-body m-2">
+		<div  class="card card-body m-2" id="workExp" >
 			<h4>Work Experience</h4> 
-			<div id="workExp" class="collapse show">
+      <div id="skills">
+        <span>Skills Highlight</span>
+        <div id="skills-box"></div>
+      </div>
+			<div class="collapse show">
 				<div class="list-group-item">
 					<div class="row">
 						<div class="col-6"><h5>Software Engineer I @ Microsoft</h5></div> 
@@ -144,9 +144,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="card card-body m-2">
+		<div class="card card-body m-2" id="sideProject" >
 			<h4>Side Projects and Relavent Courses</h4>
-			<div id="sideProject" class="collapse show list-group">
+			<div class="collapse show list-group">
 				<div class="list-group-item">
 					<div class="row">
 						<div class="col-6"><h5>Chamber Crawler 3k, Object Oriented Programming</h5></div>
@@ -187,9 +187,9 @@
 			</div>
 			
 		</div>
-		<div class="card card-body m-2">
+		<div class="card card-body m-2"  id="hobbies">
 			<h4>Hobbies</h4> 
-			<div id="hobbies" class="collapse show">
+			<div class="collapse show">
 				A large portion of my free time is usually spent in the gym, either playing sports such as table tennis or basketball, or working out. I have been training table tennis consistently for 6 years and have participated in the University's table tennis club for a couple of terms. Currently my favourite sport is basketball, I love watching NBA games and playing pick-up games with my friends at my university's gym. I also have been training powerlifting for 2 years, although my strength is still below average for a university student of my size, I love the feeling of accomplishment when I can see my progression.
 			</div>
 		</div>
